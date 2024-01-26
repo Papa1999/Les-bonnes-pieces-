@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Les Bonnes Pièces</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="pieces.js"></script>
+	</head>
+	<body>
+		<header>
+			<img src="images/logo-les-bonnes-pieces.png" alt="LOGO">
+			<h1>Les Bonnes Pièces</h1>
+		</header>
+		<main>
+			<!-- Menu de recherche -->
+			<section class="filtres">
+				<h3>Filtres</h3>
+				<button class="trier-croissant">Trier par prix croissant </button> <br>
+		
+				<button class="trier-decroissant">Trier par prix décroissant</button><br>
+				
+				<button class="filtrer-description">Filtrer les pièces sans description</button><br>
+
+				<button class="filtrer-abordable">Filtrer les pièces non abordables</button><br>
+
+				<label for="prix">Prix Maximum</label><br><input type="range" name="prix" id="prix" min="0" max="60" step="5" value="60" >
+				
+				<h3>Ajouter un avis</h3>
+				<form class="formulaire-avis">
+
+					Identifiant de la piece :<br>
+					<input type="number" max="5" name="piece-id" required> <br>
+
+					Nombre d'étoile :<br>
+					<input type="number" name="nbr_etoile" max="5" required> <br>
+
+					Nom d'utilisateur: <br>
+					<input type="text" name="utilisateur" required><br>
+					
+					Avis : <br>
+					<input type="text" name="commentaire" required><br>
+
+					<button>Envoyer</button>
+				</form>
+
+				<h3>Données</h3>
+				<button class="btn-maj">Mettre à jour les pieces</button>
+			</section>
+
+			<!-- Fiches produits -->
+			<section class="fiches">
+				<div class="pieces_disponibles">
+					<p>Pièces disponibles</p>
+
+				</div>
+					
+				<div class="pieces_abordables">
+					<p>Pieces abordables</p>  
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
